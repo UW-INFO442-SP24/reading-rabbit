@@ -14,8 +14,8 @@ How might we address the disparity between reading levels among K-5 children in 
 
 ## Functional Requirements (Priority 0)
 - **Resources Page**: A central hub with links to free downloadable books.
-- **Upcoming Events Page**: Features similar to "kinguistics" for book donation events.
-- **Local Libraries and Reading Centers Map**: A map with filters to help users find local educational resources.
+- **Upcoming Events Page**: Feature listing upcoming book drives/ donation events.
+- **Local Libraries and Reading Centers Map**: An interactive map to help users find local libraries and reading centers.
 
 ## Team
 - **Jimena Talamantes**
