@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Reading Rabbit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+"Reading Rabbit" is a web application designed to enhance literacy among K-5 children in the Seattle area who have been adversely impacted by the shift to online learning during the COVID-19 pandemic. Our goal is to provide a digital platform that offers accessible, engaging literacy resources, helping to bridge the gap in reading skills exacerbated by recent educational disruptions.
 
-## Available Scripts
+## Problem Statement
+In the wake of the COVID-19 pandemic, many children have faced significant barriers in accessing quality education, particularly in literacy. The "Reading Rabbit" project aims to address these challenges by leveraging digital solutions to provide inclusive and equitable educational resources, as outlined in UN SDG #4, Quality Education.
 
-In the project directory, you can run:
+## Our Chosen SDG
+We are focused on [UN SDG #4: Quality Education](https://www.un.org/sustainabledevelopment/education/), targeting specifically the objective 4.1, which emphasizes inclusive and equitable quality education and promotes lifelong learning opportunities for all. Our project seeks to mitigate the economic and engagement constraints that have limited educational access and quality during the pandemic.
 
-### `npm start`
+## How Might We
+Address the disparity in reading levels among K-5 children in Seattle affected by online learning? "Reading Rabbit" provides curated links and recommendations to free children’s books and other interactive learning materials to support literacy.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Functional Requirements
+### Priority 0 (P0)
+- **Resources Page**: A central hub with links to free downloadable books.
+- **Upcoming Events Page**: Features similar to "kinguistics" for book donation events.
+- **Local Libraries and Reading Centers Map**: A map with filters to help users find local educational resources.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Priority 1 (P1)
+- **Filter for Genres**: Allows users to filter available resources based on genre.
+- **Variety of Reading Content**: A diverse array of reading materials to cater to different interests and reading levels.
 
-### `npm test`
+### Priority 2 (P2)
+- **Accessibility Features**: Ensuring the platform is accessible to all users, including those with disabilities.
+- **Integration with Classroom Curriculum**: To be developed in future phases, requiring data from educational institutions.
+- **Gamification Elements**: Intended to enhance user engagement through interactive learning elements.
+- **About Page**: Details about the team members and project goals.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Team
+- **Jimena Talamantes**
+- **JP Lopez**
+- **Naiyyra Abdel Aziz**
+- **Nicole Nobbay**
+- **Tia Esperanzate**
 
-### `npm run build`
+## References
+- Suga, M. "Education - United Nations Sustainable Development." [United Nations](https://www.un.org/sustainabledevelopment/education/).
+- Daley, S. G., Xu, Y., Proctor, C. P., Rappolt-Schlichtmann, G., & Goldowsky, B. (2020). "Behavioral Engagement among Adolescents with Reading Difficulties: The Role of Active Involvement in a Universally Designed Digital Literacy Platform." *Reading & Writing Quarterly*, 36(3), 278–295. [DOI](https://doi.org/10.1080/10573569.2019.1635545)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Contribute
+Interested in contributing to Reading Rabbit? Please read our CONTRIBUTING.md to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes to the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the [LICENSE NAME] License - see the [LICENSE.md](LICENSE.md) file for details.
