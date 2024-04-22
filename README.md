@@ -38,9 +38,3 @@ How might we address the disparity between reading levels among K-5 children in 
 ## References
 - Suga, M. "Education - United Nations Sustainable Development." [United Nations](https://www.un.org/sustainabledevelopment/education/).
 - Daley, S. G., Xu, Y., Proctor, C. P., Rappolt-Schlichtmann, G., & Goldowsky, B. (2020). "Behavioral Engagement among Adolescents with Reading Difficulties: The Role of Active Involvement in a Universally Designed Digital Literacy Platform." *Reading & Writing Quarterly*, 36(3), 278–295. [DOI](https://doi.org/10.1080/10573569.2019.1635545)
-
-## How to Contribute
-Interested in contributing to Reading Rabbit? Please read our CONTRIBUTING.md to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes to the project.
-
-## License
-This project is licensed under the [LICENSE NAME] License - see the [LICENSE.md](LICENSE.md) file for details.
