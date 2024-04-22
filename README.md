@@ -1,7 +1,7 @@
 # Reading Rabbit
 
 ## Overview
-"Reading Rabbit" is a web application designed to enhance literacy among K-5 children in the Seattle area who have been adversely impacted by the shift to online learning during the COVID-19 pandemic. Our goal is to provide a digital platform that offers accessible, engaging literacy resources, helping to bridge the gap in reading skills exacerbated by recent educational disruptions.
+Reading Rabbit is a web application designed to enhance literacy among K-5 children in the Seattle area who have been adversely impacted by the shift to online learning during the COVID-19 pandemic. Our goal is to provide a digital platform that offers accessible, engaging literacy resources, helping to bridge the gap in reading skills exacerbated by recent educational disruptions.
 
 ## Problem Statement
 In the wake of the COVID-19 pandemic, many children have faced significant barriers in accessing quality education, particularly in literacy. The "Reading Rabbit" project aims to address these challenges by leveraging digital solutions to provide inclusive and equitable educational resources, as outlined in UN SDG #4, Quality Education.
@@ -10,7 +10,7 @@ In the wake of the COVID-19 pandemic, many children have faced significant barri
 We are focused on [UN SDG #4: Quality Education](https://www.un.org/sustainabledevelopment/education/), targeting specifically the objective 4.1, which emphasizes inclusive and equitable quality education and promotes lifelong learning opportunities for all. Our project seeks to mitigate the economic and engagement constraints that have limited educational access and quality during the pandemic.
 
 ## How Might We
-Address the disparity in reading levels among K-5 children in Seattle affected by online learning? "Reading Rabbit" provides curated links and recommendations to free children’s books and other interactive learning materials to support literacy.
+How might we address the disparity between reading levels among K-5 children in the Seattle area who were adversely impacted by online learning during the COVID-19 pandemic and provide a digital platform that supports reading literacy? 
 
 ## Functional Requirements
 ### Priority 0 (P0)
