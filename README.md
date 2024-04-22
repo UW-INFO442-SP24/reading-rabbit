@@ -13,20 +13,10 @@ We are focused on [UN SDG #4: Quality Education](https://www.un.org/sustainabled
 How might we address the disparity between reading levels among K-5 children in the Seattle area who were adversely impacted by online learning during the COVID-19 pandemic and provide a digital platform that supports reading literacy? 
 
 ## Functional Requirements
-### Priority 0 (P0)
+### Priority 0
 - **Resources Page**: A central hub with links to free downloadable books.
 - **Upcoming Events Page**: Features similar to "kinguistics" for book donation events.
 - **Local Libraries and Reading Centers Map**: A map with filters to help users find local educational resources.
-
-### Priority 1 (P1)
-- **Filter for Genres**: Allows users to filter available resources based on genre.
-- **Variety of Reading Content**: A diverse array of reading materials to cater to different interests and reading levels.
-
-### Priority 2 (P2)
-- **Accessibility Features**: Ensuring the platform is accessible to all users, including those with disabilities.
-- **Integration with Classroom Curriculum**: To be developed in future phases, requiring data from educational institutions.
-- **Gamification Elements**: Intended to enhance user engagement through interactive learning elements.
-- **About Page**: Details about the team members and project goals.
 
 ## Team
 - **Jimena Talamantes**
