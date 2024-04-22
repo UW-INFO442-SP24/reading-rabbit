@@ -7,7 +7,7 @@ Reading Rabbit is a web application designed to enhance literacy among K-5 child
 In the wake of the COVID-19 pandemic, many children have faced significant barriers in accessing quality education, particularly in literacy. The "Reading Rabbit" project aims to address these challenges by leveraging digital solutions to provide inclusive and equitable educational resources, as outlined in UN SDG #4, Quality Education.
 
 ## Our Chosen SDG
-We are focused on [UN SDG #4: Quality Education](https://www.un.org/sustainabledevelopment/education/), targeting specifically the objective 4.1, which emphasizes inclusive and equitable quality education and promotes lifelong learning opportunities for all. Our project seeks to mitigate the economic and engagement constraints that have limited educational access and quality during the pandemic.
+We are focused on [UN SDG #4: Quality Education](https://sdgs.un.org/goals/goal4), targeting specifically the objective 4.1, which emphasizes inclusive and equitable quality education and promotes lifelong learning opportunities for all. Our project seeks to mitigate the economic and engagement constraints that have limited educational access and quality during the pandemic.
 
 ## How Might We
 How might we address the disparity between reading levels among K-5 children in the Seattle area who were adversely impacted by online learning during the COVID-19 pandemic and provide a digital platform that supports reading literacy? 
