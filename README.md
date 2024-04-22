@@ -12,8 +12,7 @@ We are focused on [UN SDG #4: Quality Education](https://www.un.org/sustainabled
 ## How Might We
 How might we address the disparity between reading levels among K-5 children in the Seattle area who were adversely impacted by online learning during the COVID-19 pandemic and provide a digital platform that supports reading literacy? 
 
-## Functional Requirements
-### Priority 0
+## Functional Requirements (Priority 0)
 - **Resources Page**: A central hub with links to free downloadable books.
 - **Upcoming Events Page**: Features similar to "kinguistics" for book donation events.
 - **Local Libraries and Reading Centers Map**: A map with filters to help users find local educational resources.
