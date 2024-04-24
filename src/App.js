@@ -1,6 +1,6 @@
 import About from './components/About/about.js';
 import Home from './components/Home/home.js';
-import Events from './components/Events/event.js';
+import Events from './components/Events/events.js';
 import Map from './components/Map/map.js';
 import Resources from './components/Resources/resources.js';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";

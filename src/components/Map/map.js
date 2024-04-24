@@ -1,3 +1,4 @@
 import React from 'react';
 
-export default function [Map](props) {
+export default function Map(props) {
+}
