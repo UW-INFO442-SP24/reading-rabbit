@@ -1,1 +1,0 @@
-<li><a className="navigator" href="/About">About</a></li>

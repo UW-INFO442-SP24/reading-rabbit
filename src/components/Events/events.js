@@ -1,4 +1,5 @@
 import React from 'react';
 
-export default function Events(props) {
-    }
+export function Events(props) {
+
+}

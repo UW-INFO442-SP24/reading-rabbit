@@ -1,0 +1,107 @@
+/*/* NAVBAR STYLING */
+
+/* group of page links */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+display: flex;
+}
+
+/* singular link to page */
+li {
+    float: left;
+    justify-content: right;
+    align-self: baseline;
+}
+
+/* link to page when clicked */
+li a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* page link text */
+li a {
+font-family: "Poppins", sans-serif;
+display: block;
+color: white;
+text-align: center;
+padding: 30px 30px 0rem 0rem;
+text-decoration: none;
+align-items: right;
+padding-right: 3rem;
+}
+
+/* group of all navbar elements */
+nav {
+    background-color: #1371A5;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logo in navbar */
+nav img {
+    padding: 1rem 1rem;
+    max-height: 60px;
+}
+
+/* website name next to logo */
+.group-name {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-left: 0rem;
+}
+
+/* group with logo and website name */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* hamburger menu visibility for desktop screens */
+@media (min-width: 702px) {
+    .hamburger-selection {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+/* hamburger menu visibility/styling for mobile screens */
+@media (max-width: 702px) {
+
+    .material-symbols-outlined{
+        background-color: #1371A5;
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .menuNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .showMenu {
+        padding: 5rem;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    
+}
+
