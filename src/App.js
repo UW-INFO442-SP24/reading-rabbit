@@ -1,7 +1,6 @@
 import { Books } from './components/Books/books.js';
 import { Home } from './components/Home/home.js';
 import { Events } from './components/Events/events.js';
-import Map from './components/Map/map.js';
 import { Resources } from './components/Resources/resources.js';
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -16,7 +15,7 @@ export default function App() {
       {/* navbar */}
       <nav>
         <div className="logo">
-          <img src="./reading-rabbit-logo.png" alt="logo" />
+          <img src="../img/reading-rabbit-logo.png" alt="logo" />
 
           <a className="group-name" href='/'>Reading <br />Rabbit</a>
         </div>
@@ -49,7 +48,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/find-your-library" element={<Map />} />
+        {/* <Route path="/find-your-library" element={<Map />} /> */}
       </Routes>
     </div>
   );

@@ -2,112 +2,456 @@
 
 /* group of page links */
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-display: flex;
-}
-
-/* singular link to page */
-li {
-    float: left;
-    justify-content: right;
-    align-self: baseline;
-}
-
-/* link to page when clicked */
-li a:focus {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-/* page link text */
-li a {
-font-family: "Poppins", sans-serif;
-display: block;
-color: white;
-text-align: center;
-padding: 30px 30px 0rem 0rem;
-text-decoration: none;
-align-items: right;
-padding-right: 3rem;
-}
-
-/* group of all navbar elements */
-nav {
-    background-color: #1371A5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
-}
-
-/* logo in navbar */
-nav img {
-    padding: 1rem 1rem;
-    max-height: 60px;
-}
-
-/* website name next to logo */
-.group-name {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    text-decoration: none;
-    padding-left: 0rem;
-    font-weight: bold;
-}
-
-/* group with logo and website name */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-/* hamburger menu visibility for desktop screens */
-@media (min-width: 702px) {
-    .hamburger-selection {
-        display: none;
-    }
-
-    .nav-links {
-        display: block;
-        flex-direction: column;
-    }
-}
-
-/* hamburger menu visibility/styling for mobile screens */
-@media (max-width: 702px) {
-
-    .material-symbols-outlined{
-        background-color: #1371A5;
-        color: white;
-        font-size: 3rem;
-        position: absolute;
-        top: 30px;
-        right: 20px;
-    }
-
-    .menuNav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .showMenu {
-        padding: 5rem;
-    }
-
-
-    .nav-links {
-        display: none;
-    }
-
-    nav {
-        flex-direction: column;
     }
     
-}
-
-#map { 
-    height: 180px; 
-    margin: 3rem;
-    margin: 3rem;
-}
+    /* singular link to page */
+    li {
+        float: left;
+        justify-content: right;
+        align-self: baseline;
+    }
+    
+    /* link to page when clicked */
+    li a:focus {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    /* page link text */
+    li a {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px 0rem 0rem;
+    text-decoration: none;
+    align-items: right;
+    padding-right: 3rem;
+    }
+    
+    /* group of all navbar elements */
+    nav {
+        background-color: #1371A5;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* logo in navbar */
+    nav img {
+        padding: 1rem 1rem;
+        max-height: 60px;
+    }
+    
+    /* website name next to logo */
+    .group-name {
+        font-family: "Poppins", sans-serif;
+        color: white;
+        text-decoration: none;
+        padding-left: 0rem;
+        font-weight: bold;
+    }
+    
+    /* group with logo and website name */
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* hamburger menu visibility for desktop screens */
+    @media (min-width: 702px) {
+        .hamburger-selection {
+            display: none;
+        }
+    
+        .nav-links {
+            display: block;
+            flex-direction: column;
+        }
+    }
+    
+    /* hamburger menu visibility/styling for mobile screens */
+    @media (max-width: 702px) {
+    
+        .material-symbols-outlined{
+            background-color: #1371A5;
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+        }
+    
+        .menuNav {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .showMenu {
+            padding: 5rem;
+        }
+    
+    
+        .nav-links {
+            display: none;
+        }
+    
+        nav {
+            flex-direction: column;
+        }
+        
+    }
+    
+    
+    /*/* HOMEPAGE STYLING */
+    
+    /* text describing the goal of our website*/
+    .homepage-description {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: x-large;
+    }
+    
+    /* container holding the website objective title and description*/
+    .about-container {
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    /* the container of all elements on the homepage*/
+    .homepage {
+        font-family: "Poppins", sans-serif;
+    }
+    
+    /* the title at the top of the homepage for our values for the website*/
+    .homepage-title {
+        font-size: xx-large;
+        padding-bottom: 0rem;
+    }
+    
+    .about-container img {
+        max-width: 200px;
+    }
+    
+    /* header for favorite books section*/
+    .fav-books-title {
+        padding-top: 2rem;
+        font-size: xx-large;
+    }
+    
+    /* container of all elements in the favorite books section*/
+    .our-fav-books {
+        text-align: center;
+        background-color: #DAF2E9;
+        margin: 1rem;
+        border-radius: 30px;
+    }
+    
+    /* button styling*/
+    .btn-dark {
+        background-color: #FDBA45;
+        color: white;
+        border-radius: 20px;
+        padding: 0.7rem 6rem 0.7rem 6rem;
+        text-decoration: none;
+        font-weight: 650;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* spacing around the button*/
+    .keep-browsing-btn {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* styling for book cover images*/
+    .book-cover {
+        max-width: 184px;
+        height: 249px;
+        align-self: center;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        background-color: #F26250;
+    }
+    
+    /* styling for only ONE BOOK, inside a container of books*/
+    .fav-book {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+    
+    /* container holding all books in the favorite books section*/
+    .fav-books-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    /* styling for text describing the corresponding book*/
+    .fav-book-desc {
+        max-width: 184px;
+        height: 249px;
+        padding: 1rem;
+        background-color: white;
+        align-self: center;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    
+    }
+    
+    /* shrinking the book and description sizes in favorite books section for smaller screens*/
+    @media (max-width: 425px) {
+        .fav-book-desc {
+            max-width: 102px;
+            max-height: 134.5px;
+            padding: 1rem;
+            flex-shrink: 3;
+        }
+    
+        .book-cover {
+            max-width: 102px;
+            max-height: 134.5px;
+        }
+    
+        .fav-book-desc p {
+            display: none;
+        }
+    
+    }
+    
+    /* section holding local book event details*/
+    .local-events {
+        text-align: center;
+        background-color: #DAF2E9;
+        margin: 1rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 4rem;
+        padding-top: 1rem;
+    }
+    
+    /* a container of the title and short description of the local event section*/
+    .event-section-labels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* title/label for the local events section*/
+    .local-events-title {
+        font-size: xx-large;
+    }
+    
+    /* short summary of what the local event section is*/
+    .local-event-desc {
+        font-size: x-large;
+    }
+    
+    /* a container within the seciton holding details of a specific event */
+    .preview-event {
+        margin: 1rem;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    /* description of a specific local event including title*/
+    .event-desc-preview {
+        text-align: left;
+        padding: 1rem;
+    }
+    
+    /* description of a specific local event not including title*/
+    .event-desc-preview p {
+        text-align: left;
+        margin-right: 1rem;
+    }
+    
+    /* image for a specific event*/
+    .event-cover img{
+        max-width: 230px;
+        padding: 1rem;
+    }
+    
+    /* resizing various homepage elements for smaller screens*/
+    @media (max-width: 702px) {
+        .btn-dark {
+            padding: 0.7rem 4rem 0.7rem 4rem;
+    
+        }
+        .event-cover img{
+            max-width: 180px;
+            padding: 1rem;
+        }
+    
+        .fav-book-desc a {
+            font-size: small;
+        }
+    
+        .fav-book-desc h3 {
+            font-size: small;
+        }
+    
+        .homepage-title {
+            font-size: x-large;
+        }
+        .homepage-description {
+            font-size: medium;
+        }
+        
+    }
+    
+    /* resizing the website objective summary and other homepage eleemts for larger screens (1024px)*/
+    @media (min-width: 1024px) {
+        .about-container {
+            width: fill;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .homepage-description {
+            width: 630px;
+        }
+    
+        .local-event-desc {
+            width: 430px;
+    
+        }
+    
+        .event-section-labels {
+            align-self: center;
+            width: 430px;
+    
+        }
+    
+        .local-events {
+            align-items: left;
+        }
+    
+    }
+    
+    /* resizing the website objective summary and other homepage eleemts for larger screens (1533px)*/
+    @media (min-width: 1533px) {
+        .about-container {
+            width: fill;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .homepage-description {
+            width: 630px;
+        }
+    
+        .local-event-desc {
+            width: 430px;
+        }
+    
+        .event-section-labels {
+            align-self: center;
+    
+        }
+    
+        .local-events {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+    
+        .our-fav-books {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+    }
+    
+    /* resizing the website objective summary for medium sized screens (768px)*/
+    @media (max-width: 768px) {
+        .about-container {
+            width: fill;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .homepage-description {
+            width: 430px;
+        }
+    
+        .local-event-desc {
+            width: 430px;
+        }
+    
+    }
+    
+    /* resizing the website objective summary for smaller screens (320px)*/
+    @media (max-width: 320px) {
+        .preview-event {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+        }
+    
+        .event-desc-preview p {
+            text-align: center;
+            padding-left: 1rem;
+        }
+    }
+    
+    /* resizing the website objective summary for smaller screens (425px)*/
+    @media (max-width: 425px) {
+    
+        .homepage-description {
+            width: 230px;
+        }
+    
+        .preview-event {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    
+        .event-desc-preview {
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        .local-event-desc {
+            font-size: medium;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 190px;
+        }
+        
+    }
+    
+    /*/*  FOOTER STYLING */
+    .foot {
+        text-align: center;
+        background-color: #1371A5;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        padding: 2rem;
+    }
