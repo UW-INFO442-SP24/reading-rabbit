@@ -53,6 +53,7 @@ nav img {
     color: white;
     text-decoration: none;
     padding-left: 0rem;
+    font-weight: bold;
 }
 
 /* group with logo and website name */
@@ -105,3 +106,8 @@ nav img {
     
 }
 
+#map { 
+    height: 180px; 
+    margin: 3rem;
+    margin: 3rem;
+}
