@@ -231,6 +231,69 @@ nav img {
 
 }
 
+/*/* Book Page Styling */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* the container of all elements on the bookpage*/
+.bookpage {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background image + header */
+.books-title {
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    background-image: url('/public/img/library.jpg');
+    background-size: cover; 
+    background-position: top right; 
+    padding: 20px; 
+    grid-column: 1 / -1; 
+}
+
+/* Genre selector */
+#genreFilter {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+/* Book outline and formatting*/
+.book {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+/* Style the selected option differently */
+#genreFilter option:checked {
+    font-weight: bold;
+    color: #333;
+  }
+
+/* Spacing between the label and select */
+.genre-filter {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+/* Green background color */
+.filter-container {
+    display: flex;
+    background-color: #DAF2E9;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px; 
+    width: fit-content;
+  }
+
 /* section holding local book event details*/
 .local-events {
     text-align: center;
