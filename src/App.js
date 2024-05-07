@@ -6,7 +6,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import './style.css';
-
+import MapComponent from './components/Map/map';
 
 export default function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -48,7 +48,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
         <Route path="/events" element={<Events />} />
-        {/* <Route path="/find-your-library" element={<Map />} /> */}
+        <Route path="/find-your-library" element={<MapComponent />} />
+
       </Routes>
     </div>
   );
