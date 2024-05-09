@@ -1,6 +1,7 @@
 import { Books } from './components/Books/books.js';
 import { Home } from './components/Home/home.js';
 import { Events } from './components/Events/events.js';
+import { SingleBook } from './components/Books/singlebook.js';
 import { Resources } from './components/Resources/resources.js';
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -47,6 +48,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
+        <Route path="/singlebook" element={<SingleBook />} />
         <Route path="/events" element={<Events />} />
         <Route path="/find-your-library" element={<MapComponent />} />
 
