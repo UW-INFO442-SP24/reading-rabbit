@@ -231,6 +231,68 @@ nav img {
 
 }
 
+/*/* Single Book Page Styling */
+.download {
+    padding: 30px;
+    width: fit-content;
+    padding-top: 2rem;
+    margin: 0 auto; 
+    margin-top:
+  }
+
+.go-back {
+    padding: 30px;
+    padding-top: 2rem;
+    text-align: left;
+  }
+
+.instruction-list {
+    margin: 0 auto; 
+    text-align: center; 
+    background-color: #DAF2E9;
+    padding-bottom: 20px;
+}
+
+.instruction-list h2 {
+    padding-top: 20px;
+}
+
+.fav-single-book {
+    display: flex;
+  }
+
+  .one-book {
+    display: flex;
+  }
+
+  .one-book p {
+    padding-left: 30px;
+  }
+
+  .one-book h1 {
+    padding-left: 30px;
+  }
+
+.description-book {
+    text-align: left; /* Align the list items to the left */
+}
+  
+  .single-book-cover {
+    max-width: 40%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    background-color: #F26250;
+  }
+
+  .single-book {
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .download-instructions {
+    text-align: center; /* Center the download button */
+  }
+
 /*/* Book Page Styling */
 .books-container {
     display: grid;
