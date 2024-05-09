@@ -1,4 +1,5 @@
 import React from 'react';
+import { SingleBook } from './singlebook';
 import { Link } from 'react-router-dom';
 
 export function Books(props) {
@@ -35,7 +36,7 @@ export function Books(props) {
                         <div className="fav-book-desc" value="fiction">
                             <h3>A Dog on a Log 1</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="nonfiction">
