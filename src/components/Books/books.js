@@ -44,7 +44,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 2</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="fantasy">
@@ -52,7 +52,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 3</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="fiction">
@@ -60,7 +60,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 4</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="mystery">
@@ -68,7 +68,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 5</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="nonfiction">
@@ -76,7 +76,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 6</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="fantasy">
@@ -84,7 +84,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 7</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="fiction">
@@ -92,7 +92,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 8</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book" value="nonfiction">
@@ -100,7 +100,7 @@ export function Books(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log 9</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook">View this book</a>
                         </div>
                     </div>
                 </div>
