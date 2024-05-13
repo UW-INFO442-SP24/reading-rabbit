@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import './style.css';
 import MapComponent from './components/Map/map';
-
+import EventPage from './components/Events/EventPage.js';
 export default function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   return (
@@ -51,7 +51,7 @@ export default function App() {
         <Route path="/singlebook" element={<SingleBook />} />
         <Route path="/events" element={<Events />} />
         <Route path="/find-your-library" element={<MapComponent />} />
-
+        <Route path="/event/:eventType" element={<EventPage/>} />
       </Routes>
     </div>
   );
