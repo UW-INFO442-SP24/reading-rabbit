@@ -28,7 +28,7 @@ function EventPage() {
   const event = eventDetails[eventType] || eventDetails.familyStoryTime;
 
   return (
-    <div><Link to="/events" className="btn btn-dark">Back to Events</Link>
+    <div className="back-event-btn"><Link to="/events" className="btn btn-dark">Back to Events</Link>
     <div className="event-page">
     
 

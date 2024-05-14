@@ -13,7 +13,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: left;
-
   }
   
   .event-image {
@@ -59,3 +58,6 @@
     background-color: #0056b3;
   }
   
+  .back-event-btn {
+    padding-top: 5rem;
+  }
