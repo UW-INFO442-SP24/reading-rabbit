@@ -6,13 +6,9 @@ export function Events(props) {
         // Events page contents
         <div className="eventpage">
             {/* section introducing the events page */}
-            <section className="about-container">
-                <h1 className="local-events-title">
-                    Find events near you!
-                </h1>
-                <div className="event">
-                    <img src="/img/books.png" alt="Books stacked in boxes" className="book-cover" />
-                </div>
+            <section className="about-container"></section>
+            <section className="events-title">
+                <h1> Find events near you!</h1>
             </section>
 
             {/* upcoming events to attend */}
@@ -35,9 +31,9 @@ export function Events(props) {
                             <h3>Family Story Time</h3>
                             <p>Stories, music, and more will be provided to support early literacy. This event will be housted on Boulevard park for children up to 7 years old. Accomodations provided upon request.</p>
                             <div className="keep-browsing-btn">
-                                
-                            
-                            <Link to="/event/familyStoryTime" className="btn btn-dark">Family Story Time</Link>
+
+
+                                <Link to="/event/familyStoryTime" className="btn btn-dark">Family Story Time</Link>
 
 
                             </div>
@@ -55,7 +51,7 @@ export function Events(props) {
                             <h3>Free Books!</h3>
                             <p>We will be giving away free books between 10am till 3pm or when we runout. Be sure to mark your calendar we hope to see you there! There will not be a limit on how many books can be taken, take as much as you need</p>
                             <div className="keep-browsing-btn">
-                            <Link to="/event/freeBooks" className="btn btn-dark">Free Books</Link>
+                                <Link to="/event/freeBooks" className="btn btn-dark">Free Books</Link>
                             </div>
                         </div>
                     </div>
@@ -72,7 +68,7 @@ export function Events(props) {
                             <h3>Community Reading</h3>
                             <p>Our community librarians will be reading to children K-5 snacks and drinks will be provided! Parents are more than welcome to checkout our free books. Bring a book and take a book for best practices</p>
                             <div className="keep-browsing-btn">
-                                <Link to="/event/communityReading" className="btn btn-dark">Family Story Time</Link>
+                                <Link to="/event/communityReading" className="btn btn-dark">Community Reading</Link>
 
                             </div>
                         </div>

@@ -239,18 +239,18 @@ nav img {
     padding: 30px;
     width: fit-content;
     padding-top: 2rem;
-    margin: 0 auto; 
-  }
+    margin: 0 auto;
+}
 
 .go-back {
     padding: 30px;
     padding-top: 2rem;
     text-align: left;
-  }
+}
 
 .instruction-list {
-    margin: 0 auto; 
-    text-align: center; 
+    margin: 0 auto;
+    text-align: center;
     background-color: #DAF2E9;
     padding-bottom: 20px;
 }
@@ -261,45 +261,50 @@ nav img {
 
 .fav-single-book {
     display: flex;
-  }
+}
 
-  .one-book {
+.one-book {
     display: flex;
-  }
+}
 
-  .one-book p {
+.one-book p {
     padding-left: 30px;
-  }
+}
 
-  .one-book h1 {
+.one-book h1 {
     padding-left: 30px;
-  }
+}
 
 .description-book {
-    text-align: left; /* Align the list items to the left */
+    text-align: left;
+    /* Align the list items to the left */
 }
-  
-  .single-book-cover {
-    max-width: 40%; /* Ensure the image does not exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+
+.single-book-cover {
+    max-width: 40%;
+    /* Ensure the image does not exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     background-color: #F26250;
-  }
+}
 
-  .single-book {
-    align-items: center; /* Center content horizontally */
-  }
-  
-  .download-instructions {
-    text-align: center; /* Center the download button */
-  }
+.single-book {
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.download-instructions {
+    text-align: center;
+    /* Center the download button */
+}
 
 /*/* Book Page Styling */
 .books-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem; 
+    gap: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -312,13 +317,24 @@ nav img {
 
 /* Background image + header */
 .books-title {
-    text-align: center; 
-    color: rgb(255, 255, 255); 
+    text-align: center;
+    color: rgb(255, 255, 255);
     background-image: url('/public/img/library.jpg');
-    background-size: cover; 
-    background-position: top right; 
-    padding: 20px; 
-    grid-column: 1 / -1; 
+    background-size: cover;
+    background-position: top right;
+    padding: 20px;
+    grid-column: 1 / -1;
+}
+
+/* Background image + header */
+.events-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url('/public/img/books.png');
+    background-size: cover;
+    background-position: top right;
+    padding: 20px;
+    grid-column: 1 / -1;
 }
 
 /* Genre selector */
@@ -328,36 +344,36 @@ nav img {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 20px;
-  }
+}
 
 /* Book outline and formatting*/
 .book {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 4px;
-  }
-  
+}
+
 /* Style the selected option differently */
 #genreFilter option:checked {
     font-weight: bold;
     color: #333;
-  }
+}
 
 /* Spacing between the label and select */
 .genre-filter {
     margin-right: 10px;
     margin-top: 5px;
-  }
-  
+}
+
 /* Green background color */
 .filter-container {
     display: flex;
     background-color: #DAF2E9;
     padding: 10px;
     margin: 15px;
-    border-radius: 10px; 
+    border-radius: 10px;
     width: fit-content;
-  }
+}
 
 /* section holding local book event details*/
 .local-events {
