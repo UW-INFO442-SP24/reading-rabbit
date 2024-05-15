@@ -625,7 +625,8 @@ html {
   }
   
   #map {
-    height: 100%;
+    height: 180%; 
+    margin-top: 5rem;
     flex: 1; /* Allow the map to take up remaining space */
   }
 
@@ -685,4 +686,13 @@ html {
 .leaflet-top.leaflet-right {
     top: 10px;
     right: 50px;
+}
+
+.space {
+    height: 90px;
+}
+
+.map-space {
+    height: 1000px;
+
 }

@@ -137,8 +137,10 @@ function MapComponent() {
 
     return (
         <div className="map-page">
+            <div className="map"></div>
             <div id="map" className="map"></div>
             <div style={{ position: 'fixed', top: '10px', left: '10px', zIndex: 1000 }}>
+            <div className="space"></div>
                 <Draggable>
                     <div className="filter-controls">
                         <label>
