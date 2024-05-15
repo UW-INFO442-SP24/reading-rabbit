@@ -45,6 +45,10 @@ function MapComponent() {
                 marker.on('click', function () {
                     setSelectedLibrary(library);
                     document.getElementById('map').classList.add('shift-left');
+                    const libraryDetails = document.querySelector('.library-details');
+                    if (libraryDetails) {
+                        libraryDetails.classList.add('shift-left');
+                    }
                 });
             });
         }
@@ -125,31 +129,37 @@ function MapComponent() {
     const handleCloseClick = () => {
         setSelectedLibrary(null);
         document.getElementById('map').classList.remove('shift-left');
+        const libraryDetails = document.querySelector('.library-details');
+        if (libraryDetails) {
+            libraryDetails.classList.remove('shift-left');
+        }
     };
 
     return (
         <div className="map-page">
             <div id="map" className="map"></div>
-            <Draggable>
-                <div className="filter-controls">
-                    <label>
-                        Open:
-                        <select value={filterOption} onChange={e => setFilterOption(e.target.value)}>
-                            <option value="Monday">Monday</option>
-                            <option value="Tuesday">Tuesday</option>
-                            <option value="Wednesday">Wednesday</option>
-                            <option value="Thursday">Thursday</option>
-                            <option value="Friday">Friday</option>
-                            <option value="Saturday">Saturday</option>
-                            <option value="Sunday">Sunday</option>
-                            <option value="Open on Weekends">Open on Weekends</option>
-                        </select>
-                    </label>
-                    <button onClick={filterLibraries}>Filter</button>
-                </div>
-            </Draggable>
+            <div style={{ position: 'fixed', top: '10px', left: '10px', zIndex: 1000 }}>
+                <Draggable>
+                    <div className="filter-controls">
+                        <label>
+                            Open:
+                            <select value={filterOption} onChange={e => setFilterOption(e.target.value)}>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                                <option value="Open on Weekends">Open on Weekends</option>
+                            </select>
+                        </label>
+                        <button onClick={filterLibraries}>Filter</button>
+                    </div>
+                </Draggable>
+            </div>
             {selectedLibrary && (
-                <div className="library-details">
+                <div className={`library-details ${selectedLibrary ? 'shift-left' : ''}`}>
                     <button className="close-button" onClick={handleCloseClick}>X</button>
                     <h2>{selectedLibrary.NAME} Branch</h2>
                     <p><strong>Address:</strong> {selectedLibrary.ADDRESS}</p>
