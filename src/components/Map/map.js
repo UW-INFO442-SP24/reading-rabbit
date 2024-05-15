@@ -54,7 +54,13 @@ function MapComponent() {
         initMap();
     }, []);
 
-    return <div id="map"></div>;
+    return (
+        <div>
+            <div className="space"></div>
+            <div id="map"></div>
+        </div>
+
+    );
 }
 
 export default MapComponent;

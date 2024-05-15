@@ -36,12 +36,12 @@ export function SingleBook(props) {
                
             </section>    
 
-            <section class="download-instructions">
+            <section className="download-instructions">
                 <div className="download">
                     <Link to="/singlebook" className="btn btn-dark">Download PDF</Link>
                 </div> 
 
-                <div class="instruction-list">
+                <div className="instruction-list">
                     <h2>Download Instructions</h2>
                     <div className="instructions">
                         <p>1. Click the “Download” PDF button above to get redirected to the book download site.</p>

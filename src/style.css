@@ -322,19 +322,46 @@ nav img {
     background-image: url('/public/img/library.jpg');
     background-size: cover;
     background-position: top right;
-    padding: 20px;
     grid-column: 1 / -1;
+    padding: 3rem;
+    text-shadow: 2px 2px 2px black;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+    max-height: 14rem;
+    margin-top: 0.5rem;
+}
+
+h1.books-title{
+    padding-top: 3rem;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* Background image + header */
 .events-title {
     text-align: center;
     color: rgb(255, 255, 255);
-    background-image: url('/public/img/books.png');
+    background-image: url('/public/img/books-bg.png');
     background-size: cover;
     background-position: top right;
-    padding: 20px;
+    padding: 3rem;
     grid-column: 1 / -1;
+    text-shadow: 2px 2px 2px black;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+    max-height: 14rem;
+}
+
+.events-title h1{
+    padding-top: 4rem;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.eventpage{
+    font-family: "Poppins", sans-serif;
 }
 
 /* Genre selector */
@@ -603,16 +630,20 @@ nav img {
     padding: 2rem;
 }
 
-html,
+/* html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-}
+}  */
 
 #map {
-    height: 100vh;
-    /* 100% of the viewport height */
-    width: 100vw;
-    /* 100% of the viewport width */
+        height: 590px; 
+        margin-left: 1rem;
+        margin-right: 1rem;
+}
+
+/* Space so the map isn't overlapped by the navbar */
+.space {
+    height: 90px;
 }

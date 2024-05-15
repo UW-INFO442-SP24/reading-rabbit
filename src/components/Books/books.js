@@ -15,8 +15,8 @@ export function Books(props) {
 
 
             <section>
-                <div class="filter-container">
-                    <h2 class="genre-filter">
+                <div className="filter-container">
+                    <h2 className="genre-filter">
                         Filter By Genre:
                     </h2>
                     <select id="genreFilter">

@@ -6,7 +6,6 @@ export function Events(props) {
         // Events page contents
         <div className="eventpage">
             {/* section introducing the events page */}
-            <section className="about-container"></section>
             <section className="events-title">
                 <h1> Find events near you!</h1>
             </section>
@@ -14,9 +13,6 @@ export function Events(props) {
             {/* upcoming events to attend */}
             <section className="local-events">
                 <div className="event-section-labels">
-                    <h2 className="local-events-title">
-                        Local Events
-                    </h2>
                     <p className="local-event-desc">Find book events like book drives and library hosted events happening around the Seattle area!</p>
                 </div>
                 {/* Event 1*/}
