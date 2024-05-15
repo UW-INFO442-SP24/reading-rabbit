@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import './style.css';
 import MapComponent from './components/Map/map';
 import EventPage from './components/Events/EventPage.js';
+
 export default function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   return (
@@ -17,7 +18,6 @@ export default function App() {
       <nav>
         <div className="logo">
           <img src="../img/reading-rabbit-logo.png" alt="logo" />
-
           <a className="group-name" href='/'>Reading <br />Rabbit</a>
         </div>
         <div className="hamburger-selection">
@@ -32,7 +32,6 @@ export default function App() {
               <li><Link to="/find-your-library">Find Your Library</Link></li>
             </ul>
           )}
-
         </div>
         <div className="nav-links">
           <ul>
@@ -43,7 +42,7 @@ export default function App() {
           </ul>
         </div>
       </nav>
-      
+
       {/* Routing */}
       <Routes>
         <Route path="/" element={<Home />} />

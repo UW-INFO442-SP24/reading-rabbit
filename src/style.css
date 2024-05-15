@@ -1,4 +1,4 @@
-/*/* NAVBAR STYLING */
+/* NAVBAR STYLING */
 
 /* group of page links */
 ul {
@@ -30,7 +30,6 @@ li a {
     text-align: center;
     padding: 30px 30px 0rem 0rem;
     text-decoration: none;
-    align-items: right;
     padding-right: 3rem;
 }
 
@@ -40,7 +39,9 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top */
 }
 
 /* logo in navbar */
@@ -97,7 +98,6 @@ nav img {
         padding: 5rem;
     }
 
-
     .nav-links {
         display: none;
     }
@@ -105,32 +105,30 @@ nav img {
     nav {
         flex-direction: column;
     }
-
 }
 
+/* HOMEPAGE STYLING */
 
-/*/* HOMEPAGE STYLING */
-
-/* text describing the goal of our website*/
+/* text describing the goal of our website */
 .homepage-description {
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: x-large;
 }
 
-/* container holding the website objective title and description*/
+/* container holding the website objective title and description */
 .about-container {
     text-align: center;
     padding-top: 9rem;
     padding-bottom: 5rem;
 }
 
-/* the container of all elements on the homepage*/
+/* the container of all elements on the homepage */
 .homepage {
     font-family: "Poppins", sans-serif;
 }
 
-/* the title at the top of the homepage for our values for the website*/
+/* the title at the top of the homepage for our values for the website */
 .homepage-title {
     font-size: xx-large;
     padding-bottom: 0rem;
@@ -140,14 +138,14 @@ nav img {
     max-width: 200px;
 }
 
-/* header for favorite books section*/
+/* header for favorite books section */
 .fav-books-title {
     padding-top: 2rem;
     font-size: xx-large;
     padding-bottom: 1rem;
 }
 
-/* container of all elements in the favorite books section*/
+/* container of all elements in the favorite books section */
 .our-fav-books {
     text-align: center;
     background-color: #DAF2E9;
@@ -155,7 +153,7 @@ nav img {
     border-radius: 30px;
 }
 
-/* button styling*/
+/* button styling */
 .btn-dark {
     background-color: #FDBA45;
     color: white;
@@ -166,7 +164,7 @@ nav img {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-/* spacing around the button*/
+/* spacing around the button */
 .keep-browsing-btn {
     padding-top: 1rem;
     padding-bottom: 3rem;
@@ -174,7 +172,7 @@ nav img {
     text-align: center;
 }
 
-/* styling for book cover images*/
+/* styling for book cover images */
 .book-cover {
     max-width: 184px;
     height: 249px;
@@ -184,7 +182,7 @@ nav img {
     background-color: #F26250;
 }
 
-/* styling for only ONE BOOK, inside a container of books*/
+/* styling for only ONE BOOK, inside a container of books */
 .fav-book {
     display: flex;
     justify-content: flex-start;
@@ -193,7 +191,7 @@ nav img {
     margin-bottom: 1rem;
 }
 
-/* container holding all books in the favorite books section*/
+/* container holding all books in the favorite books section */
 .fav-books-container {
     display: flex;
     justify-content: space-evenly;
@@ -203,7 +201,7 @@ nav img {
     margin-right: 1rem;
 }
 
-/* styling for text describing the corresponding book*/
+/* styling for text describing the corresponding book */
 .fav-book-desc {
     max-width: 184px;
     height: 249px;
@@ -211,10 +209,9 @@ nav img {
     background-color: white;
     align-self: center;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-
 }
 
-/* shrinking the book and description sizes in favorite books section for smaller screens*/
+/* shrinking the book and description sizes in favorite books section for smaller screens */
 @media (max-width: 425px) {
     .fav-book-desc {
         max-width: 102px;
@@ -231,10 +228,9 @@ nav img {
     .fav-book-desc p {
         display: none;
     }
-
 }
 
-/*/* Single Book Page Styling */
+/* Single Book Page Styling */
 .download {
     padding: 30px;
     width: fit-content;
@@ -277,14 +273,11 @@ nav img {
 
 .description-book {
     text-align: left;
-    /* Align the list items to the left */
 }
 
 .single-book-cover {
     max-width: 40%;
-    /* Ensure the image does not exceed the container width */
     height: auto;
-    /* Maintain aspect ratio */
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     background-color: #F26250;
@@ -292,15 +285,13 @@ nav img {
 
 .single-book {
     align-items: center;
-    /* Center content horizontally */
 }
 
 .download-instructions {
     text-align: center;
-    /* Center the download button */
 }
 
-/*/* Book Page Styling */
+/* Book Page Styling */
 .books-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -309,7 +300,7 @@ nav img {
     margin-right: 2rem;
 }
 
-/* the container of all elements on the bookpage*/
+/* the container of all elements on the bookpage */
 .bookpage {
     font-family: "Poppins", sans-serif;
     padding-top: 5rem;
@@ -346,7 +337,7 @@ nav img {
     margin-bottom: 20px;
 }
 
-/* Book outline and formatting*/
+/* Book outline and formatting */
 .book {
     border: 1px solid #ccc;
     padding: 10px;
@@ -375,7 +366,7 @@ nav img {
     width: fit-content;
 }
 
-/* section holding local book event details*/
+/* section holding local book event details */
 .local-events {
     text-align: center;
     background-color: #DAF2E9;
@@ -389,25 +380,25 @@ nav img {
     padding-top: 1rem;
 }
 
-/* a container of the title and short description of the local event section*/
+/* a container of the title and short description of the local event section */
 .event-section-labels {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* title/label for the local events section*/
+/* title/label for the local events section */
 .local-events-title {
     font-size: xx-large;
     padding-top: 1rem;
 }
 
-/* short summary of what the local event section is*/
+/* short summary of what the local event section is */
 .local-event-desc {
     font-size: x-large;
 }
 
-/* a container within the seciton holding details of a specific event */
+/* a container within the section holding details of a specific event */
 .preview-event {
     margin: 1rem;
     margin-top: 2rem;
@@ -418,29 +409,28 @@ nav img {
     flex-wrap: nowrap;
 }
 
-/* description of a specific local event including title*/
+/* description of a specific local event including title */
 .event-desc-preview {
     text-align: left;
     padding: 1rem;
 }
 
-/* description of a specific local event not including title*/
+/* description of a specific local event not including title */
 .event-desc-preview p {
     text-align: left;
     margin-right: 1rem;
 }
 
-/* image for a specific event*/
+/* image for a specific event */
 .event-cover img {
     max-width: 230px;
     padding: 1rem;
 }
 
-/* resizing various homepage elements for smaller screens*/
+/* resizing various homepage elements for smaller screens */
 @media (max-width: 702px) {
     .btn-dark {
         padding: 0.7rem 4rem 0.7rem 4rem;
-
     }
 
     .event-cover img {
@@ -463,10 +453,9 @@ nav img {
     .homepage-description {
         font-size: medium;
     }
-
 }
 
-/* resizing the website objective summary and other homepage eleemts for larger screens (1024px)*/
+/* resizing the website objective summary and other homepage elements for larger screens (1024px) */
 @media (min-width: 1024px) {
     .about-container {
         width: fill;
@@ -482,22 +471,19 @@ nav img {
 
     .local-event-desc {
         width: 430px;
-
     }
 
     .event-section-labels {
         align-self: center;
         width: 430px;
-
     }
 
     .local-events {
         align-items: left;
     }
-
 }
 
-/* resizing the website objective summary and other homepage eleemts for larger screens (1533px)*/
+/* resizing the website objective summary and other homepage elements for larger screens (1533px) */
 @media (min-width: 1533px) {
     .about-container {
         width: fill;
@@ -517,7 +503,6 @@ nav img {
 
     .event-section-labels {
         align-self: center;
-
     }
 
     .local-events {
@@ -531,7 +516,7 @@ nav img {
     }
 }
 
-/* resizing the website objective summary for medium sized screens (768px)*/
+/* resizing the website objective summary for medium sized screens (768px) */
 @media (max-width: 768px) {
     .about-container {
         width: fill;
@@ -548,16 +533,14 @@ nav img {
     .local-event-desc {
         width: 430px;
     }
-
 }
 
-/* resizing the website objective summary for smaller screens (320px)*/
+/* resizing the website objective summary for smaller screens (320px) */
 @media (max-width: 320px) {
     .preview-event {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
     }
 
     .event-desc-preview p {
@@ -566,9 +549,8 @@ nav img {
     }
 }
 
-/* resizing the website objective summary for smaller screens (425px)*/
+/* resizing the website objective summary for smaller screens (425px) */
 @media (max-width: 425px) {
-
     .homepage-description {
         width: 230px;
     }
@@ -591,10 +573,9 @@ nav img {
         padding-right: 1rem;
         width: 190px;
     }
-
 }
 
-/*/*  FOOTER STYLING */
+/* FOOTER STYLING */
 .foot p {
     text-align: center;
     background-color: #1371A5;
@@ -603,16 +584,117 @@ nav img {
     padding: 2rem;
 }
 
-html,
-body {
-    height: 100%;
+/* map styling */
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
-#map {
-    height: 100vh;
-    /* 100% of the viewport height */
-    width: 100vw;
-    /* 100% of the viewport width */
+.map-page {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust based on the height of your navbar */
+    padding-top: 60px; /* Adjust to ensure the content doesn't overlap with the navbar */
+}
+
+.map {
+    flex: 1;
+    transition: width 0.3s;
+}
+
+.library-details {
+    position: relative;
+    width: 30%; /* Adjust width as necessary */
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+    margin-top: 20px; /* Adjust margin as necessary for spacing */
+}
+
+.map.shift-left {
+    width: 70%;
+}
+
+.library-details {
+    width: 30%;
+}
+
+.library-details h2 {
+    color: #1371A5;
+}
+
+.library-details a {
+    color: #1371A5;
+    text-decoration: underline;
+}
+
+.library-details ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+.library-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #DAF2E9; /* Light color for a friendly UI */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    border-radius: 15px; /* Rounded corners */
+    position: absolute;
+    top: 80px; /* Adjust based on the navbar height */
+    left: 20px; /* Position on the left side */
+    z-index: 1001;
+    cursor: move; /* Indicate draggable element */
+}
+
+.filter-controls label {
+    margin-bottom: 0.5rem;
+}
+
+.filter-controls button {
+    background-color: #FDBA45; /* Orange color for better visibility */
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.filter-controls button:hover {
+    background-color: #F79C00;
+}
+
+.close-button {
+    background-color: #FDBA45;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    z-index: 1001; /* Ensure it is on top */
+}
+
+.close-button:hover {
+    background-color: #F79C00;
+}
+
+/* Adjust the position of the Leaflet zoom controls */
+.leaflet-top.leaflet-left {
+    top: 100px; /* Adjust this value to push the controls down */
+    left: 10px; /* Adjust this value if you want to move it horizontally */
 }
