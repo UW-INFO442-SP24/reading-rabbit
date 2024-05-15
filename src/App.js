@@ -12,6 +12,11 @@ import EventPage from './components/Events/EventPage.js';
 
 export default function App() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const setHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <div>
       {/* navbar */}
@@ -21,7 +26,7 @@ export default function App() {
           <a className="group-name" href='/'>Reading <br />Rabbit</a>
         </div>
         <div className="hamburger-selection">
-          <span className="material-symbols-outlined" state={hamburgerOpen ? "Close" : "Open"} onClick={() => setHamburgerOpen(!hamburgerOpen)}>
+          <span className="material-symbols-outlined" state={hamburgerOpen ? "Close" : "Open"} onClick={setHamburger}>
             menu
           </span>
           {hamburgerOpen && (
