@@ -1,7 +1,7 @@
 /*/* NAVBAR STYLING */
 
 /* group of page links */
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,14 +10,14 @@ ul {
 }
 
 /* singular link to page */
-li {
+nav li {
     float: left;
     justify-content: right;
     align-self: baseline;
 }
 
 /* link to page when clicked */
-li a:focus {
+nav li a:focus {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -638,10 +638,14 @@ html {
     overflow-y: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute; /* Position it absolutely */
-    top: 80px; /* Adjust the top position based on the navbar height */
+    top: 100px; /* Adjust the top position based on the navbar height */
     left: 50%;
     transform: translateX(-50%); /* Center it horizontally */
     z-index: 1000;
+  }
+
+  .library-details li {
+    list-style-type: none;
   }
   
   @media (min-width: 768px) {
@@ -684,8 +688,9 @@ html {
 }
 
 .leaflet-top.leaflet-right {
-    top: 10px;
+    top: 100px;
     right: 50px;
+    position: relative;
 }
 
 .space {
