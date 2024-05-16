@@ -10,11 +10,11 @@ export function Events(props) {
                 <h1> Find events near you!</h1>
             </section>
 
+            <h2 className="event-on-page-desc">Find book events like book drives and library hosted events happening around the Seattle area!</h2>
+
             {/* upcoming events to attend */}
             <section className="local-events">
-                <div className="event-section-labels">
-                    <p className="local-event-desc">Find book events like book drives and library hosted events happening around the Seattle area!</p>
-                </div>
+
                 {/* Event 1*/}
                 <div className="events-container">
                     <div className="preview-event">

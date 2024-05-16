@@ -41,7 +41,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 /* logo in navbar */
@@ -509,6 +509,67 @@ h1.books-title {
     }
 }
 
+@media (min-width: 2560px) {
+    .eventpage .preview-event {
+        width: 1800px;
+    }
+
+    .eventpage .local-events {
+        background-color: #DAF2E9;
+        margin-left: 12rem;
+        margin-right: 12rem; 
+    }
+}
+
+@media (max-width: 375px) {
+    .eventpage .local-events .events-container .preview-event {
+        width: 310px;
+    }
+
+    .eventpage .local-events .events-container {
+        background-color: #DAF2E9;
+        width: 100px;
+    }
+
+    .eventpage .local-events {
+        background-color: #DAF2E9;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .eventpage .local-events .events-container .preview-event {
+        width: 260px;
+    }
+
+    .eventpage .local-events .events-container {
+        background-color: #DAF2E9;
+        width: 100px;
+    }
+
+    .eventpage .local-events {
+        background-color: #DAF2E9;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .eventpage .preview-event {
+        width: 360px;
+        
+    }
+
+    .eventpage .local-events .events-container .preview-event{
+        flex-direction: column;
+    }
+
+    .eventpage .local-events {
+        background-color: #DAF2E9;
+    }
+
+
+}
+
 /* resizing the website objective summary and other homepage elements for larger screens (1533px) */
 @media (min-width: 1533px) {
     .about-container {
@@ -697,7 +758,26 @@ html {
     height: 90px;
 }
 
-.map-space {
-    height: 1000px;
+/* events page styling */
 
+.eventpage .preview-event {
+    margin: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+.event-on-page-desc {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 2rem;
+    font-size: medium;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 0;
 }

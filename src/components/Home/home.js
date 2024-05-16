@@ -12,6 +12,7 @@ export function Home(props) {
                 </h1>
                 <img src="/img/home-rabbit.jpeg" alt="Blue rabbit reading a red book with a thought bubble" />
                 <p className="homepage-description">
+                    <br/> Find free PDF books, local libraries, and events here! <br/><br/>
                     Reading Rabbit is dedicated to improving accessibility to reading materials for children grades K-5 in Seattle, Washington.
                 </p>
             </section>

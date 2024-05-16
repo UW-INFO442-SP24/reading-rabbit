@@ -21,8 +21,8 @@ export default function App() {
     <div>
       {/* navbar */}
       <nav>
-        <div className="logo">
-          <img src="../img/reading-rabbit-logo.png" alt="logo" />
+        <div className="logo" href="/">
+          <img src="../img/reading-rabbit-logo.png" alt="logo"/>
           <a className="group-name" href='/'>Reading <br />Rabbit</a>
         </div>
         <div className="hamburger-selection">
