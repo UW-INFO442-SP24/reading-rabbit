@@ -20,7 +20,7 @@ export function Home(props) {
             {/* section displaying a small set of books we recommend to download */}
             <section className="our-fav-books">
                 <h2 className="fav-books-title">
-                    Our Favorites
+                    Popular Reads
                 </h2>
                 <div className="fav-books-container">
                     <div className="fav-book">
@@ -32,18 +32,18 @@ export function Home(props) {
                         </div>
                     </div>
                     <div className="fav-book">
-                        <img src="/img/dog-on-a-log.png" alt="Dog On A Log Book Cover" className="book-cover" />
+                        <img src="/img/three-little-pigs.png" alt="The Three Little Pigs Book Cover" className="book-cover" />
                         <div className="fav-book-desc">
-                            <h3>A Dog on a Log</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
+                            <h3>The Three Little Pigs</h3>
+                            <p>A classic story about a family of pigs and a mean wolf</p>
                             <a href="/books">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book">
-                        <img src="/img/dog-on-a-log.png" alt="Dog On A Log Book Cover" className="book-cover" />
+                        <img src="/img/the-hike.png" alt="The Hike Book Cover" className="book-cover" />
                         <div className="fav-book-desc">
-                            <h3>A Dog on a Log</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
+                            <h3>The Hike</h3>
+                            <p>Mandy explores nature with her Grandpa.</p>
                             <a href="/books">View this book</a>
                         </div>
                     </div>
@@ -79,12 +79,12 @@ export function Home(props) {
                     <div className="preview-event">
                         
                         <div className="event-cover">
-                            <img src="/img/king-county-library-system-logo.png" alt="King County Library System Logo" />
+                            <img src="/img/the-seattle-public-library.png" alt="The Seattle Public Library Logo" />
                         </div>
 
                         <div className="event-desc-preview">
-                            <h3>Family Story Time</h3>
-                            <p>Stories, music, and more will be provided to support early literacy. This event will be housted on Boulevard park for children up to 7 years old. Accomodations provided upon request.</p>
+                            <h3>Arabic Story Time</h3>
+                            <p>At storytime, children from birth through elementary school and their families can enjoy stories, songs, and fun learning activities. Event in English and Arabic.</p>
                             <a href="/events">View this event</a>
                         </div>
                     </div>
