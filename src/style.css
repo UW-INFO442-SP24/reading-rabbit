@@ -781,3 +781,38 @@ html {
     margin-right: 3rem;
     padding-bottom: 0;
 }
+
+/* Library Filter */
+.filter-controls {
+    background-color: #FDBA45;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(253, 186, 69, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(253, 186, 69, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(253, 186, 69, 0);
+    }
+  }
+  
+  .filter-controls label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .filter-controls select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+  }
