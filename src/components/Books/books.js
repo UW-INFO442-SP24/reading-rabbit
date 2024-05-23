@@ -1,113 +1,64 @@
-import React from 'react';
 import { SingleBook } from './singlebook';
 import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 export function Books(props) {
+    const [books, setBooks] = useState([]);
+    const [selectedGenre, setSelectedGenre] = useState('all');
+
+    useEffect(() => {
+        fetch('/books.json')  
+        .then(response => response.json())
+        .then(data => setBooks(data))
+    }, []);
+
+    const handleGenreChange = (event) => {
+        setSelectedGenre(event.target.value);
+    };
+
+    const filteredBooks = selectedGenre === 'all'
+        ? books
+        : books.filter(book => book.genre === selectedGenre);
+
     return (
         // books page content
         <div className="bookpage">
-            {/* section summarizing Reading Rabbit objectives */}
             <section className="books-container">
                 <h1 className="books-title">
                     Free Reads
                 </h1>
             </section>
 
-
             <section>
                 <div className="filter-container">
                     <h2 className="genre-filter">
                         Filter By Genre:
                     </h2>
-                    <select id="genreFilter">
+                    <select id="genreFilter" onChange={handleGenreChange}>
                         <option value="all">All Genres</option>
-                        <option value="fiction">Fiction</option>
-                        <option value="nonfiction">Non-Fiction</option>
-                        <option value="fantasy">Fantasy</option>
-                        <option value="mystery">Mystery</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Educational">Educational</option>
+                        <option value="Fairy Tale">Fairy Tale</option>
+                        <option value="Fiction">Fiction</option>
                     </select>
                 </div>
             </section>
 
             <section className="our-books">
                 <div className="books-container">
-                    <div className="fav-book" value="fiction">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc" value="fiction">
-                            <h3>A Dog on a Log 1</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
+                    {filteredBooks.map(book => (
+                        <div className="fav-book" key={book.id}>
+                            <img src={book.image} alt={`Cover Art for the Book ${book.title}`} className="book-cover" />
+                            <div className="fav-book-desc">
+                                <h3>{book.title}</h3>
+                                <p>{book.description}</p>
+                                <Link to={`/singlebook/${book.id}`}>View this book</Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className="fav-book" value="nonfiction">
-                        <img src="/img/dog-on-a-log.png" alt="Dog On A Log Book Cover" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 2</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="fantasy">
-                        <img src="/img/dog-on-a-log.png" alt="Dog On A Log Book Cover" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 3</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="fiction">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 4</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="mystery">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 5</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="nonfiction">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 6</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="fantasy">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 7</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="fiction">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 8</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
-                    <div className="fav-book" value="nonfiction">
-                        <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="book-cover" />
-                        <div className="fav-book-desc">
-                            <h3>A Dog on a Log 9</h3>
-                            <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/singlebook">View this book</a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
 
-            <section>
-            </section>            
         </div>
     );
 }
