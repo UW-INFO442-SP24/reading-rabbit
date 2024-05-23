@@ -1,11 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
-export function SingleBook(props) {
+export function SingleBook() {
+    const { bookId } = useParams();
+    const [book, setBook] = useState(null);
+
+    useEffect(() => {
+        fetch(`/books.json`)
+            .then(response => response.json())
+            .then(data => {
+                const selectedBook = data.find(book => book.id === parseInt(bookId));
+                setBook(selectedBook);
+            });
+    }, [bookId]);
+
+    if (!book) {
+        return <div>Loading book to read...</div>;
+    }
+
     return (
-        // books page content
         <div className="bookpage">
-            {/* section summarizing Reading Rabbit objectives */}
             <section className="single-books-container">
                 <div className="go-back">
                     <Link to="/books" className="btn btn-dark">Back</Link>
@@ -13,34 +27,24 @@ export function SingleBook(props) {
             </section>
 
             <section className="single-book">
-             
-                    <div className="fav-single-book" value="fiction">
-                        <div className='one-book'>
-                            <img src="/img/dog-on-a-log.png" alt="Cover Art for the Book A Dog On A Log" className="single-book-cover" />
-                            <div>
-                                <h1>A Dog on a Log 1</h1>
-                                <p>A family discovers a dog is floating by the ocean shore.</p>
-                                <p>This is a description of the book. The book description goes here.</p>
-                                <p>Here stakeholders can read what the book is about.</p>
-                            </div>
+                <div className="fav-single-book" value={book.genre}>
+                    <div className='one-book'>
+                        <img src={book.image} alt={`Cover Art for the Book ${book.title}`} className="single-book-cover" />
+                        <div className='descriptors'>
+                            <h1>{book.title}</h1>
+                            <h3>Written By: {book.author}</h3>
+                            <h4>Genre: {book.genre}</h4>
+                            <p>{book.description}</p>
+                            <p>Book provided by {book.provider}.</p>
                         </div>
                     </div>
-
-                    {/* section summarizing Reading Rabbit objectives
-                    <div className="description-book"> 
-                        <h1>A Dog on a Log 1</h1>
-                        <p>A family discovers a dog is floating by the ocean shore.</p>
-                        <p>This is a description of the book. The book description goes here.</p>
-                        <p>Here stakeholders can read what the book is about.</p>
-                    </div> */}
-               
+                    <div className="download">
+                        <a href={book.link} className="btn btn-dark" target="_blank" rel="noopener noreferrer">Download PDF</a>
+                    </div> 
+                </div>
             </section>    
 
             <section className="download-instructions">
-                <div className="download">
-                    <Link to="/singlebook" className="btn btn-dark">Download PDF</Link>
-                </div> 
-
                 <div className="instruction-list">
                     <h2>Download Instructions</h2>
                     <div className="instructions">
