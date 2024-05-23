@@ -262,12 +262,12 @@ nav img {
     display: flex;
 }
 
-.one-book p {
+.descriptors {
     padding-left: 30px;
 }
 
-.one-book h1 {
-    padding-left: 30px;
+.descriptors h4 {
+    padding-bottom: 30px;
 }
 
 .description-book {
@@ -284,10 +284,6 @@ nav img {
 
 .single-book {
     align-items: center;
-}
-
-.download-instructions {
-    text-align: center;
 }
 
 /* Book Page Styling */
