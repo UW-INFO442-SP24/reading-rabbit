@@ -52,7 +52,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
-        <Route path="/singlebook" element={<SingleBook />} />
+        <Route path="/singlebook/:bookId" element={<SingleBook />} />
         <Route path="/events" element={<Events />} />
         <Route path="/find-your-library" element={<MapComponent />} />
         <Route path="/event/:eventType" element={<EventPage/>} />
