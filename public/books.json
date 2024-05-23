@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "A Dog on a Log",
+        "author": "T. Albert",
+        "description": "A family discovers a dog is floating by the ocean shore.",
+        "image": "/img/dog-on-a-log.png",
+        "genre": "Fiction",
+        "provider": "Monkey Pen",
+        "link": "https://cdn.shopify.com/s/files/1/2081/8163/files/023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf?v=1589890646"
+    },
+    {
+        "id": 2,
+        "title": "The Hike",
+        "author": "T. Albert",
+        "description": "Mandy explores nature with her Grandpa.",
+        "image": "/img/the-hike.png",
+        "genre": "Adventure",
+        "provider": "Monkey Pen",
+        "link": "https://cdn.shopify.com/s/files/1/2081/8163/files/026-THE-HIKE-Free-Childrens-Book-By-Monkey-Pen.pdf?v=1589890640"
+    },
+    {
+        "id": 3,
+        "title": "The Way of the Woods",
+        "author": "T. Albert",
+        "description": "A memorable tale about friendship, with delightful characters like Paw-Paw the bear, Dillard the dog, Willard the weasel.",
+        "image": "/img/book3.png",
+        "genre": "Fiction",
+        "provider": "Monkey Pen",
+        "link": "https://cdn.shopify.com/s/files/1/2081/8163/files/028-THE-WAY-OF-THE-WOODS-Free-Childrens-Book-By-Monkey-Pen.pdf?v=1589890645"
+    },
+    {
+        "id": 4,
+        "title": "Let's Count Legs",
+        "author": "All Children Reading Cambodia",
+        "description": "Practice counting through fun illustrations of different animals.",
+        "image": "/img/book4.png",
+        "genre": "Educational",
+        "provider": "Free Kids Books",
+        "link": "https://freekidsbooks.org/wp-content/uploads/2024/04/2404-let-s-count-legs-FKB.pdf"
+    },
+    {
+        "id": 5,
+        "title": "How to Proofread for Punctuation",
+        "author": "Vappingo",
+        "description": "Learn about what the different punctuation marks mean and how to use them!",
+        "image": "/img/book5.png",
+        "genre": "Educational",
+        "provider": "Free Kids Books",
+        "link": "https://freekidsbooks.org/wp-content/uploads/2024/05/punctuation-guide.pdf"
+    },
+    {
+        "id": 6,
+        "title": "The Conical Hat",
+        "author": "Ram Babu",
+        "description": "Fun story about conical hats.",
+        "image": "/img/book6.png",
+        "genre": "Educational",
+        "provider": "Free Kids Books",
+        "link": "https://freekidsbooks.org/wp-content/uploads/2024/04/2404-The_conical_hat-RTR-FKB.pdf"
+    },
+    {
+        "id": 7,
+        "title": "The Three Little Pigs and The Wolf",
+        "author": "Joseph Jacob",
+        "description": "A family discovers a dog is floating by the ocean shore.",
+        "image": "/img/three-little-pigs.png",
+        "genre": "Fairy Tale",
+        "provider": "Ririro",
+        "link": "https://ririro.com/wp-content/uploads/2023/08/The-Three-Little-Pigs_compressed.pdf"
+    },
+    {
+        "id": 8,
+        "title": "The Travels of Prince Flamingo",
+        "author": "Royal Dixon",
+        "description": "A family discovers a dog is floating by the ocean shore.",
+        "image": "/img/book8.png",
+        "genre": "Fairy Tale",
+        "provider": "Ririro",
+        "link": "https://ririro.com/wp-content/uploads/2023/04/The-travels-of-Prince-Flamingo_compressed.pdf"
+    },
+    {
+        "id": 9,
+        "title": "The Snowdrop",
+        "author": "Hans Christian Andersen",
+        "description": "A family discovers a dog is floating by the ocean shore.",
+        "image": "/img/book9.png",
+        "genre": "Adventure",
+        "provider": "Ririro",
+        "link": "https://ririro.com/wp-content/uploads/2023/02/The-snowdrop_compressed.pdf"
+    }
+]
