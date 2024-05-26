@@ -37,11 +37,13 @@ export function Events(props) {
                     <div className="preview-event">
 
                         <div className="event-cover">
-                            <img src="/img/stacked-books.png" alt="Animated books" />
+                            <img src="/img/king-county-library-system-logo.png" alt="King County Library System Logo" />
                         </div>
                         <div className="event-desc-preview">
                             <h3>Pajama Story Time!</h3>
-                            <p>Enjoy bedtime stories and songs. Wear your pajamas, bring a favorite stuffie and get snuggly at the library. </p>
+                            <p>Enjoy bedtime stories and songs. Wear your pajamas, bring a favorite stuffie and get snuggly at the library. Bring your preschoolers and toddlers to enjoy stories, rhymes, songs and fun with our children's librarian, Ms. Mynique!
+                                Early Learning is a great way for preschoolers and their families to develop learning, literacy, and language skills as well as community with other families.
+                                We read stories, sing songs, and have engaging, educational activities that help kids and their caregivers grow together. </p>
                             <div className="keep-browsing-btn">
                                 <Link to="/event/freeBooks" className="btn btn-dark">Free Books</Link>
                             </div>

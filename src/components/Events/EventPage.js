@@ -32,7 +32,7 @@ function EventPage() {
       <div className="event-page">
 
 
-        <img src="../img/library.jpg" alt="Event" className="event-image" />
+        <img src="../img/family-story-time.png" alt="Event" className="event-image" />
         <h1>{event.title}</h1>
         <p>{event.description}</p>
         <p><strong>Address:</strong> {event.address}</p>
