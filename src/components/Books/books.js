@@ -23,11 +23,9 @@ export function Books(props) {
     return (
         // books page content
         <div className="bookpage">
-            <section className="books-container">
-                <h1 className="books-title">
+                            <h1 className="books-title">
                     Free Reads
                 </h1>
-            </section>
 
             <section>
                 <div className="filter-container">

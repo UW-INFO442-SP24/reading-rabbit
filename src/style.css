@@ -112,7 +112,7 @@ nav img {
 .homepage-description {
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: x-large;
+    font-size: large;
 }
 
 /* container holding the website objective title and description */
@@ -135,6 +135,11 @@ nav img {
 
 .about-container img {
     max-width: 200px;
+    padding-bottom: 0;
+}
+
+.event-desc-preview h3 {
+    padding-bottom: 1rem;
 }
 
 /* header for favorite books section */
@@ -320,12 +325,31 @@ nav img {
 }
 
 /* Book Page Styling */
-.books-container {
-    display: grid;
+/* .our-books {
+    align-items: center;
+} */
+
+.our-books .books-container {
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 3rem; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-left: 2rem;
     margin-right: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.our-books .books-container .fav-book {
+    margin: 0.5rem;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    margin-top: 4rem;
+    padding-top: 1rem;
+    align-items: center;
 }
 
 /* the container of all elements on the bookpage */
@@ -339,29 +363,31 @@ nav img {
     text-align: center;
     color: rgb(255, 255, 255);
     background-image: url('/public/img/library.jpg');
-    background-size: cover;
-    background-position: top right;
-    grid-column: 1 / -1;
-    padding: 3rem;
+    /* background-size: cover; */
+    /* background-position: top right;
+    grid-column: 1 / -1; */
+
+
     text-shadow: 2px 2px 2px black;
     -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: black;
-    max-height: 14rem;
+    max-height: 16rem;
+    width: fill;
     margin-top: 0.5rem;
 }
 
 h1.books-title {
-    padding-top: 3rem;
     color: white;
     font-size: xx-large;
     font-weight: bold;
+    padding: 3rem;
 }
 
 /* Background image + header */
 .events-title {
     text-align: center;
     color: rgb(255, 255, 255);
-    background-image: url('/public/img/books-bg.png');
+    background-image: url('/public/img/book-fair.png');
     background-size: cover;
     background-position: top right;
     padding: 3rem;
@@ -369,7 +395,7 @@ h1.books-title {
     text-shadow: 2px 2px 2px black;
     -webkit-text-stroke-width: 0.6px;
     -webkit-text-stroke-color: black;
-    max-height: 14rem;
+    max-height: 16rem;
 }
 
 .events-title h1 {
@@ -416,7 +442,8 @@ h1.books-title {
     display: flex;
     background-color: #DAF2E9;
     padding: 10px;
-    margin: 15px;
+    padding-top: 1rem;
+    margin: 1rem;
     border-radius: 10px;
     width: fit-content;
 }
@@ -580,6 +607,16 @@ h1.books-title {
         background-color: #DAF2E9;
         flex-direction: column;
     }
+
+    .fav-book-desc a {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 375px) {
+    .fav-book-desc a {
+        font-size: x-small;
+    }
 }
 
 @media (max-width: 425px) {
@@ -596,6 +633,17 @@ h1.books-title {
         background-color: #DAF2E9;
     }
 
+    .our-books .books-container .fav-book-desc a{
+        font-size: x-small;
+    }
+
+    .fav-book-desc a {
+        font-size: x-small;
+    }
+
+    .our-books .fav-book .fav-book-desc {
+        max-width: 160px;
+    }
 
 }
 
@@ -698,6 +746,10 @@ h1.books-title {
     font-family: "Poppins", sans-serif;
     color: white;
     padding: 2rem;
+}
+
+.foot {
+    padding-top: 2rem;
 }
 
 /* Map and Library Details Styling */
@@ -804,8 +856,8 @@ html {
 .event-on-page-desc {
     text-align: center;
     font-weight: 400;
-    padding-top: 2rem;
-    font-size: medium;
+    padding-top: 3rem;
+    font-size: large;
     margin-left: 3rem;
     margin-right: 3rem;
     padding-bottom: 0;

@@ -28,7 +28,7 @@ export function Home(props) {
                         <div className="fav-book-desc">
                             <h3>A Dog on a Log</h3>
                             <p>A family discovers a dog is floating by the ocean shore.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook/1">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book">
@@ -36,7 +36,7 @@ export function Home(props) {
                         <div className="fav-book-desc">
                             <h3>The Three Little Pigs</h3>
                             <p>A classic story about a family of pigs and a mean wolf</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook/7">View this book</a>
                         </div>
                     </div>
                     <div className="fav-book">
@@ -44,7 +44,7 @@ export function Home(props) {
                         <div className="fav-book-desc">
                             <h3>The Hike</h3>
                             <p>Mandy explores nature with her Grandpa.</p>
-                            <a href="/books">View this book</a>
+                            <a href="/singlebook/2">View this book</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export function Home(props) {
                         <div className="event-desc-preview">
                             <h3>Family Story Time</h3>
                             <p>Stories, music, and more will be provided to support early literacy. This event will be housted on Boulevard park for children up to 7 years old. Accomodations provided upon request.</p>
-                            <a href="/events">View this event</a>
+                            <a href="/event/familyStoryTime">View this event</a>
                         </div>
                     </div>
                     
