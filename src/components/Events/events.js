@@ -27,11 +27,7 @@ export function Events(props) {
                             <h3>Family Story Time</h3>
                             <p>Stories, music, and more will be provided to support early literacy. This event will be housted on Boulevard park for children up to 7 years old. Accomodations provided upon request.</p>
                             <div className="keep-browsing-btn">
-
-
                                 <Link to="/event/familyStoryTime" className="btn btn-dark">Family Story Time</Link>
-
-
                             </div>
                         </div>
                     </div>
@@ -44,8 +40,8 @@ export function Events(props) {
                             <img src="/img/stacked-books.png" alt="Animated books" />
                         </div>
                         <div className="event-desc-preview">
-                            <h3>Free Books!</h3>
-                            <p>We will be giving away free books between 10am till 3pm or when we runout. Be sure to mark your calendar we hope to see you there! There will not be a limit on how many books can be taken, take as much as you need</p>
+                            <h3>Pajama Story Time!</h3>
+                            <p>Enjoy bedtime stories and songs. Wear your pajamas, bring a favorite stuffie and get snuggly at the library. </p>
                             <div className="keep-browsing-btn">
                                 <Link to="/event/freeBooks" className="btn btn-dark">Free Books</Link>
                             </div>
@@ -61,8 +57,8 @@ export function Events(props) {
                         </div>
 
                         <div className="event-desc-preview">
-                            <h3>Community Reading</h3>
-                            <p>Our community librarians will be reading to children K-5 snacks and drinks will be provided! Parents are more than welcome to checkout our free books. Bring a book and take a book for best practices</p>
+                            <h3>Arabic Storytime @ Lake City Branch </h3>
+                            <p>At storytime, children from birth through elementary school and their families can enjoy stories, songs, and fun learning activities. Event in English and Arabic.</p>
                             <div className="keep-browsing-btn">
                                 <Link to="/event/communityReading" className="btn btn-dark">Community Reading</Link>
 
