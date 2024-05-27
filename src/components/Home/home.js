@@ -79,13 +79,13 @@ export function Home(props) {
                     <div className="preview-event">
                         
                         <div className="event-cover">
-                            <img src="/img/the-seattle-public-library.png" alt="The Seattle Public Library Logo" />
+                            <img src="/img/king-county-library-system-logo.png" alt="The Seattle Public Library Logo" />
                         </div>
 
                         <div className="event-desc-preview">
-                            <h3>Arabic Story Time</h3>
-                            <p>At storytime, children from birth through elementary school and their families can enjoy stories, songs, and fun learning activities. Event in English and Arabic.</p>
-                            <a href="/events">View this event</a>
+                            <h3>Pajama Story Time</h3>
+                            <p>Enjoy bedtime stories and songs. Wear your pajamas, bring a favorite stuffie and get snuggly at the library. We read stories, sing songs, and have engaging, educational activities that help kids and their caregivers grow together.</p>
+                            <a href="/event/freeBooks">View this event</a>
                         </div>
                     </div>
 
