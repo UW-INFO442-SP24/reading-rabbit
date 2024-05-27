@@ -16,10 +16,10 @@ const eventDetails = {
     time: "Wednesday June 12th 7pm-7:30pm"
   },
   communityReading: {
-    title: "Arabic Storytime",
+    title: "Preschool Storytime",
     description: "At storytime, children from birth through elementary school and their families can enjoy stories, songs, and fun learning activities. Event in English and Arabic.",
-    address: "12501 28th Ave NE, Seattle, WA 98125",
-    time: "Saturday June 15th 10:30am-11:30am"
+    address: "15009 Roosevelt Way NE, Seattle, WA 98105",
+    time: "Saturday June 6th 11am-11:30am"
   }
 };
 
