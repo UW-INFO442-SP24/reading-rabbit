@@ -55,7 +55,7 @@ export function Events(props) {
                     <div className="preview-event">
 
                         <div className="event-cover">
-                            <img src="/img/girl-reading.png" alt="girl reading a purple book" />
+                            <img src="/img/SPL.png" alt="Seattle Public Library Logo" />
                         </div>
 
                         <div className="event-desc-preview">
