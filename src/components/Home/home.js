@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 export function Home(props) {
     return (
-        // homepage contents
         <div className="homepage">
             {/* section summarizing Reading Rabbit objectives */}
             <section className="about-container">
@@ -64,20 +63,18 @@ export function Home(props) {
 
                 <div className="events-container">
                     <div className="preview-event">
-                        
                         <div className="event-cover">
                             <img src="/img/king-county-library-system-logo.png" alt="King County Library System Logo" />
                         </div>
 
                         <div className="event-desc-preview">
                             <h3>Family Story Time</h3>
-                            <p>Stories, music, and more will be provided to support early literacy. This event will be housted on Boulevard park for children up to 7 years old. Accomodations provided upon request.</p>
+                            <p>Stories, music, and more will be provided to support early literacy. This event will be hosted on Boulevard park for children up to 7 years old. Accommodations provided upon request.</p>
                             <a href="/event/familyStoryTime">View this event</a>
                         </div>
                     </div>
                     
                     <div className="preview-event">
-                        
                         <div className="event-cover">
                             <img src="/img/king-county-library-system-logo.png" alt="The Seattle Public Library Logo" />
                         </div>
@@ -93,6 +90,15 @@ export function Home(props) {
                         <Link to="/events" className="btn btn-dark">View More</Link>
                     </div>
                 </div>
+            </section>
+
+            {/* New video section */}
+            <section className="video-tutorial">
+                <h2 className="video-title">How To Download Our Books</h2>
+                <video controls className="tutorial-video">
+                    <source src="/img/how-to-download.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </section>
         </div>
     );
